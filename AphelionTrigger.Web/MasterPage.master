@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="MainHead" runat="server" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="1" />
+  <meta name="revisit-after" content="2 days" />
+  <meta name="robots" content="index,follow" />
+  <meta name="author" content="Travis Dunn" />
+  <meta name="distribution" content="global" />
+  <meta name="description" content="Your page description here ..." />
+  <meta name="keywords" content="Aphelion Trigger, PBBG, MPOG, Open Source, Strategy Game, 4X Game, BBG" />
+  <link rel="stylesheet" type="text/css" media="screen,projection,print" href="../Styles/aphelion.css" />
+  <link rel="icon" type="image/x-icon" href="../Images/favicon.ico" />
+  <title>Aphelion Trigger</title>
+</head>
+
+<!-- Global IE fix to avoid layout crash when single word size wider than column width -->
+<!--[if IE]><style type="text/css"> body {word-wrap: break-word;}</style><![endif]-->
+
+<body>
+    <form id="MainForm" runat="server">
+    <asp:ScriptManager ID="TNScriptManager" runat="server" AsyncPostBackTimeout="60" />
+    <!-- Main Page Container -->
+    <div class="page-container">
+        <aphelion:Header ID="TNHeader" runat="server" />
+        <asp:contentplaceholder id="ATContent" runat="server">
+        </asp:contentplaceholder>
+        <aphelion:Footer ID="TNFooter" runat="server" />
+    </div>
+    </form>
+
+    <!-- Google Analytics tracking script -->    
+    <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    _uacct = "UA-2195710-1";
+    urchinTracker();
+    </script>
+    <!-- End Script--> 
+    
+</body>
+</html>
+

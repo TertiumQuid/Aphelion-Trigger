@@ -1,0 +1,183 @@
+/*************************************************************/
+/*   Design:   Multiflex-3 Update-7 / Layout-4               */
+/*   File:     Text formats                                  */
+/*-----------------------------------------------------------*/
+/*   Author:   Wolfgang                                      */
+/*   Date:     January 15, 2007                              */
+/*   Homepage: wwww.1-2-3-4.info                             */
+/*-----------------------------------------------------------*/
+/*   License:  Fully open source without restrictions.       */
+/*             Please keep footer credits with a link to     */
+/*             Wolfgang (www.1-2-3-4.info). Thank you!       */
+/*************************************************************/
+
+/******************/
+/*  MAIN SECTION  */
+/******************/
+
+/* MAIN NAVIGATION */
+.nav3-grid {width:199px; border-bottom:solid 1px rgb(200,200,200);}
+.nav3-grid dt a, .nav3-grid dt a:visited {display:block; min-height:2.0em /*Non-IE6*/; height:auto !important; height:2.0em /*IE6*/; line-height:2.0em; padding:0px 10px 0px 20px;  border-top: solid 1px rgb(200,200,200); text-decoration:none; color:rgb(70,122,167); font-weight:bold; font-size:120%;}
+.nav3-grid dd a, .nav3-grid dd a:visited {display:block; min-height:1.7em /*Non-IE6*/; height:auto !important; height:1.7em /*IE6*/; line-height:1.7em; padding:0px 10px 0px 40px; border:none; font-weight:normal; text-decoration:none; color:rgb(70,122,167); font-size:120%;}
+.nav3-grid dt a:hover, .nav3-grid dd a:hover {background-color:rgb(225,225,225); color:rgb(42,90,138); text-decoration:none;}
+
+.nav3-bullet {width:170px; margin:10px 0 0 20px;}
+.nav3-bullet dt a, .nav3-bullet dt a:visited {line-height:2.0em; padding:0 0 0 10px; background:url(../img/bg_bullet_full_1.gif) no-repeat 0px 50%; text-decoration:none; color:rgb(70,122,167); font-weight:bold; font-size:120%;}
+.nav3-bullet dd a, .nav3-bullet dd a:visited {line-height:1.7em; margin:0 0 0 15px; padding:0 0 0 10px; background:url(../img/bg_bullet_half_1.gif) no-repeat 0px 50%; text-decoration:none; color:rgb(70,122,167); font-weight:normal; font-size:120%;}
+.nav3-bullet dt a:hover {background:url(../img/bg_bullet_full_2.gif) no-repeat 0px 50%; text-decoration:underline; color:rgb(42,90,138);}
+.nav3-bullet dd a:hover {background:url(../img/bg_bullet_half_2.gif) no-repeat 0px 50%; text-decoration:underline; color:rgb(42,90,138);}
+
+.nav3-nobullet {width:170px; margin:10px 0 0 20px;}
+.nav3-nobullet dt a, .nav3-nobullet dt a:visited {line-height:2.0em; text-decoration:none; color:rgb(70,122,167); font-weight:bold; font-size:120%;}
+.nav3-nobullet dd a, .nav3-nobullet dd a:visited {line-height:1.7em; margin:0 0 0 15px; text-decoration:none; color:rgb(70,122,167); font-weight:normal; font-size:120%;}
+.nav3-nobullet dt a:hover, .nav3-nobullet dd a:hover {text-decoration:underline; color:rgb(42,90,138);}
+
+/* MAIN CONTENT */
+.main-content main-partial h1.pagetitle {margin:0 0 0.4em 0; padding:0 0 2px 0; border-bottom:solid 7px rgb(225,225,225); font-family:"trebuchet ms",arial,sans-serif; color:rgb(100,100,100); font-weight:bold; font-size:220%;}
+.main-content main-partial h1.block {clear:both; margin:1.0em 0 0em 0; padding:2px 0 2px 2px; background:rgb(190,190,190); font-family:"trebuchet ms",arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:220%;}
+.main-content main-partial h1 {clear:both; margin:1.0em 0 0.5em 0; font-family:"trebuchet ms",arial,sans-serif; color:rgb(80,80,80); font-weight:normal; font-size:210%;}
+.main-content main-partial h2 {clear:both; margin:1.0em 0 0.5em 0; font-family:"trebuchet ms",arial,sans-serif; color:rgb(80,80,80); font-weight:normal; font-size:170%;}
+.main-content main-partial h3 {clear:both; margin:-1.0em 0 0.5em 0; font-family:"trebuchet ms",arial,sans-serif; color:rgb(125,125,125); font-weight:normal; font-size:130%;}
+.main-content main-partial h1.side {clear:none;}
+.main-content main-partial h2.side {clear:none;}
+.main-content main-partial h3.side {clear:none;}
+
+.main-content main-partial h4 {margin:1.5em 0 1.0em 0; color:rgb(80,80,80); font-family:"trebuchet ms",arial,sans-serif; font-weight:normal; font-size:170%;}
+.main-content main-partial h5 {margin:0.5em 0 0.5em 0; color:rgb(80,80,80); font-family:"trebuchet ms",arial,sans-serif; font-size:140%;}
+.main-content main-partial h6 {margin:1.2em 0 0.2em 0; color:rgb(80,80,80); font-weight:bold; font-size:120%;}
+.main-content main-partial p {margin:0 0 1.0em 0; line-height:1.5em; font-size:120%;}
+.main-content main-partial p.center {text-align:center;}
+.main-content main-partial p.right {text-align:right;}
+.main-content main-partial p.details {clear:both; margin:-0.25em 0 1.0em 0; line-height:1.0em; font-size:110%;}
+.main-content main-partial blockquote {clear:both; margin:0 30px 0.6em 30px; font-size:90%;}
+
+/*
+.main-content main-partial table {clear:both; margin:2.0em 0 0.2em 1em; table-layout: auto; border-collapse:collapse; empty-cells:show; background-color:rgb(233,232,244);}
+.main-content main-partial table th.top {height:2.5em; padding:0 7px 0 7px; empty-cells:show; background-color:rgb(175,175,175); text-align:left; color:rgb(255,255,255); font-weight:bold; font-size:110%;}
+.main-content main-partial table th {height:1.5em; padding:3px 20px 2px 7px; border:solid 1px rgb(175,175,175); text-align:left; color:rgb(80,80,80); font-weight:bold; font-size:110%;}
+.main-content main-partial table td {height:1.5em; padding:3px 7px 2px 7px; border:solid 1px rgb(175,175,175); text-align:left; font-weight:normal; color:rgb(80,80,80); font-size:110%;}
+*/
+p.caption {clear:both; margin:0.5em 0 2.0em 20px; text-align:left; color:rgb(80,80,80); font-size:110%;}
+
+.main-content main-partial ul {list-style:none; margin:0.5em 0 1.0em 0;}
+.main-content main-partial ul li {margin:0 0 0.2em 2px; padding:0 0 0 12px; background:url(../img/bg_bullet_full_1.gif) no-repeat 0 0.5em; line-height:1.4em; font-size:120%;}
+.main-content main-partial ol {margin:0.5em 0 1.0em 20px !important /*Non-IE6*/; margin:0.5em 0 1.0em 25px /*IE6*/;}
+.main-content main-partial ol li {list-style-position:outside; margin:0 0 0.2em 0; line-height:1.4em; font-size:120%;}
+
+.terra-form {width:510px; margin:2.0em 0 0 0; padding:10px 10px 0 10px; border:solid 1px rgb(200,200,200); background-color:rgb(240,240,240);}
+.terra-form fieldset {padding:20px 0 0 0 !important /*Non-IE6*/; padding:0 /*IE6*/; margin:0 0 20px 0; border:solid 1px rgb(220,220,220);}
+.terra-form fieldset legend {margin:0 0 0 5px !important /*Non-IE*/; margin:0 0 20px 5px /*IE6*/; padding:0 2px 0 2px; color:rgb(80,80,80); font-weight:bold; font-size:130%;}
+.terra-form label.left {float:left; width:150px; margin:0 2px 0 5px; padding:2px; font-size:110%;}
+.terra-form select.combo {width:175px; padding:2px; border:solid 1px rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:110%;}
+.terra-form input.field {width:250px; padding:2px; border:solid 1px rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:110%;}
+.terra-form textarea {width:275px; padding:2px; border:solid 1px rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:110%;}
+.terra-form input.button {float:left; width:9.0em; margin-right:20px; padding:1px !important /*Non-IE6*/; padding:0 /*IE6*/; background:rgb(230,230,230); border:solid 1px rgb(150,150,150); text-align:center; font-family:verdana,arial,sans-serif; color:rgb(150,150,150); font-size:110%;}
+.terra-form input.button:hover {cursor: pointer; border:solid 1px rgb(80,80,80); background:rgb(220,220,220); color:rgb(80,80,80);}
+.terra-form p {margin-left: 10px;}
+.terra-form p.instructions { font-style:italic}
+
+/* MAIN SUBCONTENT */
+.sidebar h1 {clear:both; margin:0 0 10px 0; padding:4px 10px 3px 10px; background-color:rgb(190,190,190); font-family:"trebuchet ms",arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.sidebar h1.green {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(160,214,81); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.sidebar h1.blue {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(137,170,214); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.sidebar h1.orange {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(232,177,13); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+.sidebar h1.black {clear:both; margin:0 0 5px 0; padding:4px 10px 3px 10px; background-color:rgb(70,70,70); font-family:"trebuchet ms",verdana,arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:140%;}
+
+ /* Note: h2 non-existent, to make HTML-code interchangeable between 'main-navigation' and 'sidebar' */
+.sidebar h3 {clear:both; margin:1.0em 10px 0.5em 10px; color:rgb(80,80,80); font-weight:bold; font-size:110%;}
+.sidebar p {clear:both; margin:0 10px 1.0em 10px; color:rgb(80,80,80); line-height:1.3em; font-size:110%;}
+.sidebar p.center {text-align:center;}
+.sidebar p.right {text-align:right;}
+
+.sidebar ul {list-style:none; margin:0.5em 10px 1.0em 10px;}
+.sidebar ul li {margin:5px 0 0.2em 2px; padding:0 0 0 11px; background:url(../img/bg_bullet_full_1.gif) no-repeat 0 0.4em; line-height:1.2em; font-size:110%;}
+.sidebar ol {margin:0.5em 10px 1.0em 30px !important /*Non-IE6*/; margin:0.5em 10px 1.0em 35px /*IE6*/;}
+.sidebar ol li {list-style-position:outside; margin:0 0 0.4em 0; font-size:110%;}
+
+.sidebar .loginform {width:160px; margin:0 10px 0 10px;}
+.sidebar .loginform p {clear:both; margin:0; padding:0;}
+.sidebar .loginform fieldset {width:160px; border:none;}
+.sidebar .loginform label.top {float:left; width:125px; margin:0 0 2px 0; font-size:110%;}
+.sidebar .loginform label.right {float:left; width:125px; margin:5px 0 0 0; padding:0 0 0 3px; /*IE6*/; font-size:110%;}
+.sidebar .loginform input.field {width:158px; margin:0 0 5px 0; padding:0.1em 0 0.2em 0 !important /*Non-IE6*/; padding:0.2em 0 0.3em 0 /*IE6*/; border:solid 1px rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:110%;}
+.sidebar .loginform input.checkbox {float:left; margin:5px 0 0 0 !important /*Non-IE6*/; margin:2px 0 0 -3px /*IE6*/; border:none;}
+.sidebar .loginform input.button {float:left; width:5.0em; margin:10px 0 5px 0; padding:1px; background:rgb(230,230,230); border:solid 1px rgb(150,150,150); text-align:center; font-family:verdana,arial,sans-serif; color:rgb(150,150,150); font-size:110%;}
+.sidebar .loginform input.button:hover {cursor:pointer; border:solid 1px rgb(80,80,80); background:rgb(220,220,220); color:rgb(80,80,80);}
+
+.sidebar .searchform {width:160px; margin:0 10px 0 10px;}
+.sidebar .searchform fieldset {border:none;}
+.sidebar .searchform input.field {float:left; width:158px; padding:0.1em 0 0.2em 0 !important /*Non-IE6*/; padding:0.2em 0 0.3em 0 /*IE6*/; border:1px solid rgb(200,200,200); font-family:verdana,arial,sans-serif; font-size:120%;}
+.sidebar .searchform input.button {float:left; width:3.0em; margin-top: 0.5em; padding:1px; background:rgb(230,230,230); border:solid 1px rgb(150,150,150); text-align:center; font-family:verdana,arial,sans-serif; color:rgb(150,150,150); font-size:120%;}
+.sidebar .searchform input.button:hover {cursor:pointer; border:solid 1px rgb(80,80,80); background:rgb(220,220,220); color:rgb(80,80,80);}
+
+/********************/
+/*  COMMON CLASSES  */
+/********************/
+.main img.center {clear:both; float:none; display:block; margin:0 auto; padding:1px; border:1px solid rgb(150,150,150);}
+.main img.right {clear:both; float:right; margin:3px 0 7px 10px; padding:1px; border:1px solid rgb(150,150,150);}
+.main img.normal {clear:both; float:none; margin:3px 0 0 0; padding:1px; border:0;}
+
+.main a {color:rgb(70,122,167); font-weight:bold; text-decoration:none;}
+.main-content main-partial h1 a {color:rgb(70,122,167); font-weight:normal; text-decoration:none;}
+.main a:hover {color:rgb(42,90,138); text-decoration:underline;}
+.main a:visited {color:rgb(42,90,138);}
+
+.main a img {border:solid 1px rgb(150,150,150);}
+.main a:hover img {border:solid 1px rgb(220,220,220);}
+
+
+/********************/
+/*  ERROR LABEL(S)  */
+/********************/
+
+.error-container { padding: 4px; width:97%;margin-bottom:8px;display:block; color: rgb(178,34,34); font-size: 30%; font-weight:bold; display:block; }
+.error-legend { padding: 0 5px 5px 5px; font-size: 100%; font-variant: small-caps; color: rgb(178,34,34) }
+
+/********************/
+/* ACCORDIAN PANEL  */
+/********************/
+
+.accordian { border-width: 0 1px 1px 1px; border-style: solid; border-color:rgb(150,150,150); margin: 0 5px 0 10px; }
+.accordian-header { border-width: 1px 0 1px 0; border-style: solid; border-color:rgb(150,150,150); padding: 1px 3px 1px 3px; font-size: 125%; background-color: rgb(211,211,211); } 
+.accordian-header a { width: 100%; display: block; }
+.accordian-content { padding: 2px; }
+
+/********************/
+/*   Leaderboard    */
+/********************/
+
+.leaderboard { margin: 3px; border: 1px solid black; background-color: rgb(175,175,175); width: 275px;}
+.leaderboard td, .leaderboard th { padding: 2px; text-align: left; }
+
+/********************/
+/*   Messages    */
+/********************/
+
+.messages { margin: 3px; border: 1px solid rgb(109,126,143); background-color: rgb(176,196,222); width: 275px; color: rgb(50,50,50); }
+.messages td, .messages th { padding: 2px; text-align: left; }
+
+/********************/
+/*      Grids       */
+/********************/
+
+table.grid-view { table-layout: auto; border: 1px solid rgb(100,100,100); margin: 0px; width:510px; }
+table.grid-view th { border-width:0px; padding:4px 1px 0px 3px; margin:0px; height:2em; background-color:rgb(70,70,70); color:rgb(255,255,255); }
+table.grid-view td { border-width:0px; padding:2px 2px 2px 3px; height:2em; vertical-align:top; }
+
+grid-view-empty { table-layout: auto; border: 0; margin: 6px; width:520px; }
+table.grid-view-empty th { border-width:0px; margin:0px; }
+table.grid-view-empty td { border-width:0px; margin:0px; }
+
+.grid-view-pager { padding:0; margin:0; }
+
+/********************/
+/*     Box Over     */
+/********************/
+
+.boxover { width:300px; padding:0; }
+.boxover-header { width:308px; background-color:rgb(32,45,55); color:rgb(235,235,235);padding:4px; border: solid 2px rgb(255,255,0); border-bottom-width:0; font-size:115%; }
+.boxover-body { width:300px; background-color:rgb(32,55,71); color:rgb(235,235,235);padding:8px; border: solid 2px rgb(255,255,0); }
+
+.width100 { width:100px; }
+.width200 { width:200px; }
+.width300 { width:300px; }

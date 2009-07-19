@@ -1,0 +1,268 @@
+﻿/* BROWSER RESETS */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	line-height:1;
+	font-family:inherit;
+	text-align:left;
+	vertical-align:baseline;
+	font-family:"Arial Narrow", Verdana, Arial, Helvetica, sans-serif;
+}
+
+body {background:rgb(25,25,25) url(../Images/background.gif) top left repeat;}
+
+a img, :link img, :visited img {border:0;}
+table {border-collapse:collapse; border-spacing:0;}
+ol, ul {list-style: none;}
+q:before, q:after, blockquote:before, blockquote:after {content: "";}
+strong {font-weight:bold;}
+td {vertical-align:top;}
+input, select, textarea {font-size: 90%;}
+
+/* GLOBAL */
+
+.page-container {width:900px; margin:0px auto; margin-top:10px; margin-bottom:10px; border:solid 1px rgb(150,150,150); background-color:rgb(255,255,255);}
+
+/* HEADER */
+
+.header {width:900px;background-color:rgb(255,255,255)}
+.header-top {width:900px; height:80px; background:rgb(49,59,90) url(../Images/background_header.jpg); overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
+.header-middle {width:900px; height:150px; background:rgb(74,74,74) url(../Images/background_reports.jpg); overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
+.header-bottom {width:900px; height:40px;}
+
+.title {width:329px; height:74px; position:absolute; z-index:1; margin:3px 0 0 5px; overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
+.title h1 {font-size:250%;font-weight:bold;font-family:Arial;}
+.title h2 {margin:2px 0 0 0; color:rgb(125,125,125); font-size:100%;}
+.version {font-size:40%; color:rgb(125,125,125); font-family:Tahoma;}
+
+/* HUD */
+
+.hud {width:520px; position:absolute; z-index:3; margin:10px 0 2px 360px; padding:5px; border:1px solid rgb(255,255,255); padding-bottom:4px; background-color:rgb(107,117,149); color:rgb(255,255,255);}
+.hud a {color:rgb(255,255,255);}
+
+.hud ul {float:left; padding:0 2px 0 0; font-weight:bold; clear: both;}	
+.hud li {display:inline; list-style:none;}
+.hud li a {display:block; float:left; padding:2px 5px 0px 5px; color:rgb(255,255,255); text-decoration:none;}
+.hud a span {color:rgb(185,185,185);}
+
+/* REPORTS */
+
+.report-header { border:1px solid rgb(32,178,179); border-bottom:0; width:881px; margin:0 0 0 4px; padding:1px 0px 0px 5px; height:20px; color:rgb(32,178,179); background-color:rgb(69,79,110); font-size:85%; font-weight:bold; font-variant:small-caps }
+.report-box { border:1px solid rgb(32,178,179); width:881px; font-family: Verdana; margin:0 0 0 4px; padding-left:5px; height:115px; color:rgb(255,255,255); font-size:75%; overflow:auto; }
+
+/* NAVIGATION */
+
+.navigation {float:left; width:900px; border:none; background:rgb(200,200,200) url(../Images/background_navigation.jpg) no-repeat; color:rgb(75,75,75);}
+
+.navigation ul {list-style-type:none;}
+.navigation ul li {float:left; position:relative; z-index:auto !important /*Non-IE6*/; z-index:1000 /*IE6*/; border-right:solid 1px rgb(175,175,175);}
+.navigation ul li a {float:none !important /*Non-IE6*/; float:left /*IE-6*/; display:block; height:2.5em; line-height:2.5em; padding:0 16px 0 16px; text-decoration:none; font-size:95%; font-weight:bold; color:rgb(79,89,120);}
+.navigation ul li ul {display:none; border:none;}
+.navigation ul li a.selected { background-color: rgb(255,255,255); color:rgb(75,75,75);}
+
+/* (Non-IE6 hovering) */
+
+.navigation ul li:hover a {background-color:rgb(210,210,210); text-decoration:none; color:rgb(107,117,149);} /*Color main cells hovering mode*/
+.navigation ul li:hover ul {display:block; width:10.0em; position:absolute; z-index:999; top:3.0em; margin-top:0.1em; left:0;}
+.navigation ul li:hover ul li a {display:block; width:10.0em; height:auto; line-height:1.3em; margin-left:-1px; padding:4px 16px 4px 16px; border-left:solid 1px rgb(175,175,175); border-bottom: solid 1px rgb(175,175,175); background-color:rgb(237,237,237); font-weight:normal; color:rgb(50,50,50);} /*Color subcells normal mode*/
+.navigation ul li:hover ul li a:hover {background-color:rgb(210,210,210); text-decoration:none;} /*Color subcells hovering mode*/
+.navigation ul li a.selected:hover { background-color: rgb(255,255,255); color:rgb(75,75,75);}
+
+/* (IE6 hovering) */
+
+.navigation table {position:absolute; top:0; left:0; border-collapse:collapse;}
+.navigation ul li a:hover {background-color:rgb(210,210,210); text-decoration:none; color:rgb(107,117,149);} /*Color main cells hovering mode*/
+.navigation ul li a:hover ul {display:block; width:10.0em; position:absolute; z-index:999; top:3.1em; t\op:3.0em; left:0; marg\in-top:0.1em;}
+.navigation ul li a:hover ul li a {display:block; w\idth:10.0em; height:1px; line-height:1.3em; padding:4px 16px 4px 16px; border-left:solid 1px rgb(175,175,175); border-bottom: solid 1px rgb(175,175,175); background-color:rgb(237,237,237); font-weight:normal; color:rgb(50,50,50);} /*Color subcells normal mode*/
+.navigation ul li a:hover ul li a:hover {background-color:rgb(210,210,210); text-decoration:none;} /*Color subcells hovering mode*/
+
+.sub-navigation ul {float:left; width:600px; list-style:none; padding:0 0 0 15px; background:rgb(255,255,255);}
+.sub-navigation ul li {display:inline; padding:0 0 0 10px; background:transparent url(../Images/bullet_arrow.gif) no-repeat 0 50%; font-weight:bold; color:rgb(125,125,125); font-size:70%;}
+.sub-navigation ul a {color:rgb(70,122,167); text-decoration:none;}
+.sub-navigation ul a.selected, .sub-navigation ul a.selected:hover {color:rgb(125,125,125); text-decoration:none; }
+.sub-navigation ul a:hover {color:rgb(49,49,90); text-decoration:underline;}
+
+/* CONTENT */
+
+.main {clear:both; width:900px; padding:15px 0 30px 0;}
+.main-content {display:inline; /*Fix IE floating margin bug*/; float:left; margin:0 10px 0 15px; overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
+.main-partial { width:560px; }
+.main-full { width:850px; }
+
+.main-content table {padding:3px;}
+
+.dark-box {background-color:rgb(10,10,10);color:rgb(255,255,255);padding:3px;margin-bottom:10px;}
+.dark-box a {color:rgb(134,162,185);text-decoration:none;border:1px solid rgb(20,20,20);padding:0 2px 0 2px;}
+.dark-box a:hover {background-color:rgb(50,65,100);color:rgb(255,255,255);border:1px solid rgb(255,255,255);}
+
+.light-box {background-color:rgb(208,226,240);color:rgb(31,13,75);border:1px solid rgb(134,162,184);padding:3px;margin-bottom:10px;}
+.light-box p.header {background-color:rgb(166,193,214);padding:2px 0 2px 3px;width:549px;font-weight:bold;}
+
+.vertical {display:block;padding-bottom:300px;}
+
+/* PAGE */
+
+.main-content h1.pagetitle {margin:0 0 .6em 0; padding:0 0 2px 0; border-bottom:solid 6px rgb(225,225,225); color:rgb(100,100,100); font-weight:bold; font-size:165%;}
+.main-content h1 {clear:both; margin:1.0em 0 0.5em 0; color:rgb(80,80,80); font-weight:bold; font-size:140%;}
+.main-content h2 {clear:both; margin:0.5em 0 0.5em 0; color:rgb(80,80,80); font-weight:bold; font-size:125%;}
+.main-content h4 {clear:both; margin:0.5em 0 0.5em 0; color:rgb(125,125,125); font-weight:normal; font-size:85%;}
+
+.main-content p {margin:0 0 1.0em 0;}
+.main-content .content-unit {margin:0 0 1.0em 0;}
+.main-content hr {width:99%; color:rgb(200,200,200); background-color:rgb(200,200,200); height:1px; border:0px solid;}
+
+/* SIDEBAR */
+
+.round-border-topleft {width:10px; height:10px; position:absolute; z-index:100; background:url(../Images/bg_corner_topleft.gif) no-repeat; margin-top:-1px; margin-left:-1px;}
+.round-border-topright {width:10px; height:10px; position:absolute; z-index:100; background:url(../Images/bg_corner_topright.gif) no-repeat; margin-top:-1px; margin-left:274px;}
+
+.sidebar {width:300px; margin:0; padding:0 0 5px 0; float:right;}
+.sidebar-blue {width:283px; margin:0 0 1em 0px; padding-bottom:1px; border:solid 1px rgb(50,66,101); background-color:rgb(255,255,255);}
+.sidebar-box {margin:3px 3px 4px 3px;background-color:rgb(10,10,10); color:rgb(255,255,255); padding:5px;}
+h1.blue {clear:both; margin:0 0 3px 0; padding:4px 10px 3px 10px; background-color:rgb(50,66,101); color:rgb(255,255,255); font-weight:bold; font-size:110%;}
+
+/* MESSAGES */
+
+.messages { margin:3px; border: 1px solid rgb(109,126,143); background-color: rgb(176,196,222);font-size:90%;width:97%;color:rgb(50,50,50); }
+.messages td, .messages th { padding: 2px; text-align: left; }
+.messages a {text-decoration:none;border:1px solid rgb(176,196,222);padding:0px 1px 1px 3px;display:inline-block;}
+.messages a:hover {background-color:rgb(255,255,255);border:1px solid rgb(10,30,90);}
+
+/* ATTACKS */
+
+.attacks { margin:3px; border: 1px solid rgb(109,126,143); background-color: rgb(176,196,222);font-size:90%;width:97%;color:rgb(50,50,50); }
+.attacks td, .messages th { padding: 2px; text-align: left; }
+.attacks a {text-decoration:none;border:1px solid rgb(176,196,222);padding:0px 1px 1px 3px;display:inline-block;}
+.attacks a:hover {background-color:rgb(255,255,255);border:1px solid rgb(10,30,90);}
+
+/* FORMS */
+
+.form {background-color:rgb(100,105,110);border:1px solid rgb(50,66,100);color:rgb(255,255,255);}
+.form th {background-color:rgb(50,66,100);color:rgb(255,255,255);margin:3px;font-weight:bold;}
+.form td, .form th {padding:5px;text-align:left;}
+.form table {width:100%;}
+
+.label {display:inline-block;color:rgb(255,255,255);}
+.textbox {padding:2px; border:1px solid rgb(255,255,255); background-color: rgb(82,113,131); color:rgb(255,255,255); margin: 1px 0 4px 0;}
+
+.input1 {width:100px;}
+.input2 {width:125px;}
+.input3 {width:150px;}
+.input4 {width:175px;}
+.input5 {width:200px;}
+.input6 {width:225px;}
+.input7 {width:250px;}
+.input8 {width:275px;}
+.input8 {width:300px;}
+.input9 {width:350px;}
+.input10 {width:400px;}
+
+.input50 {width:700px;}
+
+.input100 {width:100%;}
+
+a.button {display:block; margin:3px 3px 5px 3px; padding:2px 2px 2px 5px; font-weight:bold; border:solid 1px rgb(255,255,255);background-color:rgb(75,115,150); text-decoration:none;color:rgb(255,255,255); font-size:90%;font-variant:small-caps;}
+a.button-inline, .button-row a {display:inline-block; margin:3px 3px 5px 3px; padding:2px 10px 2px 5px; font-weight:bold; border:solid 1px rgb(255,255,255);background-color:rgb(75,115,150); text-decoration:none;color:rgb(255,255,255); font-size:90%;font-variant:small-caps;}
+a.button:hover, a.button-inline:hover, .button-row a:hover { background-color:rgb(110,155,190);}
+.button-row a {width:100px;}
+
+/* CLEAR FLOATS */
+
+.page-container:after, .main:after, .main-navigation:after, .main-content:after, .main-content div:after, .sidebar:after {content:"";display:block;height:0;clear:both;visibility:hidden;}
+
+/* LEADERBOARDS */
+
+.leaderboard {width:261px;}
+.leaderboard td, .leaderboard th {padding-right:2px;}
+.leaderboard-header {background-color:rgb(255,255,255);color:rgb(32,20,54);text-align:left;font-weight:bold;font-size:90%;}
+.leaderboard-row {line-height:1.1em;padding-top:3px;font-size:78%;}
+.leaderboard-row img {margin-top:2px;}
+.leaderboard-pager {background-color:rgb(52,52,62);font-weight:bold;color:rgb(207,225,235);font-family:"Arial Rounded MT Bold", "Arial Black", Arial;font-size:90%;}
+.leaderboard-pager a, .leaderboard-pager a:visited {text-decoration:none;text-align:left;font-weight:bold;color:rgb(132,162,186);}
+.leaderboard-pager a:hover {color:rgb(207,225,235);}
+.leaderboard-pager td {width:20px}
+
+/* FOOTER */
+
+.footer {clear:both; width:900px; padding:1.0em 0 1.0em 0; background:rgb(225,225,225) url(../Images/background_footer.jpg) no-repeat; font-size:75%; overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
+
+.footer p {line-height:1.3em; text-align:center; color:rgb(125,125,125); font-weight:bold; font-size:110%;}
+.footer p.credits {font-weight:normal;}
+.footer a {text-decoration:underline; color:rgb(125,125,125);}
+.footer a:hover {text-decoration:none; color:rgb(0,0,0);}
+.footer a:visited {color:rgb(0,0,0);}
+
+.quote  {clear:both;width:900px;line-height:1.5em;color:rgb(150,150,150);padding:0.7em 0 1.0em 0;text-align:center;background:rgb(250,250,250);color:rgb(150,150,150);font-size:75%; overflow:visible !important /*Firefox*/; overflow:hidden /*IE6*/;}
+
+/* POPUP MENU */
+
+.popup-menu {width:125px;background-color: rgb(255,255,255);padding:4px;border:1px solid rgb(0,0,0);color:rgb(25,25,25);font-size:110%;}
+.popup-menu h3 {font-weight:bold;margin:1px 0px 3px 4px;}
+.popup-menu h4 {font-weight:normal;margin:1px 0px 3px 4px;font-size:90%;}
+.popup-menu a {text-decoration:none;border:1px solid rgb(155,162,172);background-color:rgb(208,226,240);display:block;margin:1px;padding:1px 2px 1px 2px;width:90%;color:rgb(73,101,122);font-size:120%;}
+.popup-menu a:hover {border:1px solid rgb(0,0,0);background-color:rgb(240,195,18);color:rgb(0,0,0);}
+
+/* GRIDS */
+
+table.grid { table-layout: auto; margin:0px;font-size:90%; }
+table.grid th {background-color:rgb(150,150,155);color:rgb(0,0,0);padding:1px 0 1px 3px;font-weight:bold;}
+table.grid td { border-width:0px; padding:2px; height:1.2em; vertical-align:top; padding-top:5px; }
+table.grid th a {color:rgb(0,0,50);text-decoration:none;border:none; background:none;}
+table.grid th a:hover {color:rgb(25,25,255);border:none;background:none;}
+
+table.grid a {color:rgb(125,125,255);text-decoration:none;}
+
+/* BOXOVER */
+
+.boxover { padding:0;}
+.boxover-header { background-color:rgb(32,45,55); color:rgb(235,235,235);padding:4px; padding-right:12px; border:solid 1px rgb(46,77,123); border-bottom-width:0; font-size:105%; font-weight:bold; }
+.boxover-body { background-color:rgb(211,222,239); color:rgb(36,67,113);padding:8px; border:solid 1px rgb(46,77,123);font-size:90%;}
+
+.boxover-body p {margin:0 0 1.0em 0;}
+.boxover-body table {width:100%}
+.boxover-body th {margin-bottom:2px;background-color:rgb(188,214,205);font-weight:bold;}
+.boxover-body td {vertical-align:top;}
+
+/* PROGRESS BARS */
+
+.progressbar_container {width:200px;height:12px;border:1px solid black;padding:2px 4px 2px 2px;font:75% arial;margin: 0 3px 2px 3px;float:left;text-align:right;}
+.progressbar_container-dark {width:200px;height:12px;border:2px solid rgb(125,125,125   );padding:2px 4px 2px 2px;font:75% arial;margin: 0 3px 2px 3px;float:left;text-align:right;color:rgb(0,0,0);background-color:rgb(255,255,255);}
+.progressbar_bar {float:left;height:10px;width:0px;background-color:rgb(150,220,220);color:#000;vertical-align:top;font-size:97%;border:1px solid rgb(100,150,100);}
+
+/* ERROR LABEL */
+
+.error-container {border:2px solid rgb(178,34,34);margin-bottom:8px;color:rgb(178,34,34);font-size:90%;line-height:12px;background-color:rgb(210,230,245);}
+.error-legend {background-color:rgb(178,34,34);color:rgb(255,255,255);font-size:105%;padding:2px;border:1px solid rgb(255,255,255);margin-bottom:5px;}
+.error-body {display:block;padding:4px;line-height:125%;}
+
+.error-containers { padding: 4px; width:97%;margin-bottom:8px;display:block; color: rgb(178,34,34); font-size: 110%; font-weight:bold; display:block; border:1px solid rgb(178,34,34);vertical-align:top;}
+.error-legends { padding: 0 5px 5px 5px; font-size: 12px; font-variant: small-caps; color: rgb(178,34,34) }
+ 
+/* MISC */
+
+.completion-list {font-size:80%;background-color:rgb(255,255,255);z-index:100;padding:2px;border:1px solid rgb(82,113,131); margin-left:1px;}
+
+.boards {width:100%;border:1px solid rgb(0,0,0);}
+.boards-top th {background-color:rgb(0,0,0);color:rgb(255,255,255);padding: 2px 0 2px 4px;}
+.board-title, .board th {background-color:rgb(145,145,145);color:rgb(225,225,225);padding:2px;font-weight:bold;}
+.boards td, .board td {padding: 5px 0 2px 3px;font-size:90%;}
+.boards td a {text-decoration:none;color:rgb(105,133,155);font-weight:bold;}
+.boards td a:hover {color:rgb(227,148,3);}
+.board {width:100%;border:1px solid rgb(0,0,0);} 
+.board td img {padding-bottom:3px;}
+.board td a {text-decoration:none;color:rgb(105,133,155);font-size:90%;font-weight:bold;}
+.board td a:hover {color:rgb(15,15,15);}
+.board-alt {background-color:rgb(213,230,246);}
+
+.board-pager {background-color:rgb(75,75,85);font-weight:bold;color:rgb(207,225,235);font-family:"Arial Rounded MT Bold", "Arial Black", Arial;}
+.board-pager a, .board-pager a:visited {text-decoration:none;text-align:left;font-weight:bold;color:rgb(132,162,186);}
+.board-pager td {width:25px;padding-bottom:2px;}
+.board-pager tr {width:25px;float:left;}
+.board-pager td a:hover {color:rgb(207,225,235);}

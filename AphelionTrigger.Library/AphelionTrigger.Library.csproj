@@ -1,0 +1,126 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D1DAC7A-EEC0-49C0-85D5-7E84DC9B5D74}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AphelionTrigger.Library</RootNamespace>
+    <AssemblyName>AphelionTrigger.Library</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BoxOver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Backup\Black Arc\My Programming\Aphelion Trigger\AphelionTrigger.Web\Bin\BoxOver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Extensions.Design, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advancement.cs" />
+    <Compile Include="AdvancementList.cs" />
+    <Compile Include="Age.cs" />
+    <Compile Include="AgeList.cs" />
+    <Compile Include="AttackCommand.cs" />
+    <Compile Include="CodexRecord.cs" />
+    <Compile Include="CodexRecordList.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="EspionageCommand.cs" />
+    <Compile Include="Logs\EspionageLog.cs" />
+    <Compile Include="EspionageOperation.cs" />
+    <Compile Include="EspionageOperationList.cs" />
+    <Compile Include="Faction.cs" />
+    <Compile Include="FactionList.cs" />
+    <Compile Include="Forum\ForumPostList.cs" />
+    <Compile Include="Forum\ForumPost.cs" />
+    <Compile Include="Forum\ForumBoard.cs" />
+    <Compile Include="Forum\ForumBoardList.cs" />
+    <Compile Include="Forum\ForumTopicList.cs" />
+    <Compile Include="Forum\ForumCategory.cs" />
+    <Compile Include="Forum\ForumCategoryList.cs" />
+    <Compile Include="Forum\ForumBoardType.cs" />
+    <Compile Include="Forum\ForumBoardTypeList.cs" />
+    <Compile Include="Forum\ForumTopic.cs" />
+    <Compile Include="Guild.cs" />
+    <Compile Include="GuildList.cs" />
+    <Compile Include="House.cs" />
+    <Compile Include="HouseList.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelList.cs" />
+    <Compile Include="Logs\Attack.cs" />
+    <Compile Include="Logs\AttackList.cs" />
+    <Compile Include="Logs\Report.cs" />
+    <Compile Include="Logs\ReportList.cs" />
+    <Compile Include="Logs\SystemLog.cs" />
+    <Compile Include="Logs\SystemLogCommand.cs" />
+    <Compile Include="Logs\SystemLogDestination.cs" />
+    <Compile Include="Logs\SystemLogList.cs" />
+    <Compile Include="Logs\SystemLogType.cs" />
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageList.cs" />
+    <Compile Include="Spy.cs" />
+    <Compile Include="SpyList.cs" />
+    <Compile Include="System\NewsPost.cs" />
+    <Compile Include="System\NewsPostList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\ATIdentity.cs" />
+    <Compile Include="Security\ATPrincipal.cs" />
+    <Compile Include="System\ATConfiguration.cs" />
+    <Compile Include="System\Quote.cs" />
+    <Compile Include="System\QuoteList.cs" />
+    <Compile Include="Technology.cs" />
+    <Compile Include="TechnologyList.cs" />
+    <Compile Include="TechnologyType.cs" />
+    <Compile Include="TechnologyTypeList.cs" />
+    <Compile Include="Unit.cs" />
+    <Compile Include="UnitClass.cs" />
+    <Compile Include="UnitClassList.cs" />
+    <Compile Include="UnitList.cs" />
+    <Compile Include="UpdateCreditsCommand.cs" />
+    <Compile Include="UpdatePopulationCommand.cs" />
+    <Compile Include="UpdateRankingsCommand.cs" />
+    <Compile Include="UpdateResearchCommand.cs" />
+    <Compile Include="UpdateTurnsCommand.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Csla\Csla.csproj">
+      <Project>{9DA591ED-C570-47AC-8E5D-35B039E07973}</Project>
+      <Name>Csla</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
